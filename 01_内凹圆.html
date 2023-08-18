@@ -1,0 +1,30 @@
+
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <title>内凹圆角</title>
+  <style type="text/css">
+    .singleArrow {
+		width: 200px;
+		height: 10px;
+		position: relative;
+		background-color: #15ff00;
+		/* transform: rotate(-40deg); */  /* 旋转角度 */
+	}
+	.singleArrow::after {
+		content: '';
+		display: block;
+		position: absolute;
+		right: -20px;  /* 箭头位置 */
+		top: -5px;  /* 箭头位置 */
+		border-top: 10px solid transparent; 	/* 箭头高低 */
+		border-bottom: 10px solid transparent; /* 箭头高低 */
+		border-left: 20px solid #00b9f7; /* 箭头长度*/
+	}
+  </style>
+  </head>
+  <body>
+    <div class="singleArrow">
+    </div>
+  </body>
+  </html>
